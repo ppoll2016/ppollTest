@@ -15,14 +15,32 @@
 		3F762C2F1D5C0E7700D73A72 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F762C2D1D5C0E7700D73A72 /* LaunchScreen.storyboard */; };
 		3F762C3A1D5C0E7700D73A72 /* pPollTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F762C391D5C0E7700D73A72 /* pPollTests.swift */; };
 		3F762C451D5C0E7700D73A72 /* pPollUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F762C441D5C0E7700D73A72 /* pPollUITests.swift */; };
-		C27F1E851D5C383300687179 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27F1E841D5C383300687179 /* Account.swift */; };
-		C27F1E871D5C386A00687179 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27F1E861D5C386A00687179 /* Profile.swift */; };
-		C27F1E891D5C3DFA00687179 /* Topic.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27F1E881D5C3DFA00687179 /* Topic.swift */; };
-		C27F1E8B1D5C3EFD00687179 /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27F1E8A1D5C3EFD00687179 /* Group.swift */; };
-		C27F1E8D1D5C3F3B00687179 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27F1E8C1D5C3F3B00687179 /* Question.swift */; };
-		C27F1E8F1D5C430700687179 /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27F1E8E1D5C430700687179 /* Answer.swift */; };
-		C27F1E911D5C431600687179 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27F1E901D5C431600687179 /* Response.swift */; };
-		C27F1E931D5C47BF00687179 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27F1E921D5C47BF00687179 /* Model.swift */; };
+		BF145ACF1D60B4AB00FBB327 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF145ACE1D60B4AB00FBB327 /* LoginController.swift */; };
+		BF145AD11D60BDBA00FBB327 /* SignUpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF145AD01D60BDBA00FBB327 /* SignUpController.swift */; };
+		BF145AD31D60BDF600FBB327 /* ForgetPasswordController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF145AD21D60BDF600FBB327 /* ForgetPasswordController.swift */; };
+		BF145AD91D61452D00FBB327 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF145AD51D61452D00FBB327 /* Fabric.framework */; };
+		BF145ADA1D61452D00FBB327 /* TwitterKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF145AD61D61452D00FBB327 /* TwitterKit.framework */; };
+		BF145ADB1D61452D00FBB327 /* TwitterKitResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = BF145AD71D61452D00FBB327 /* TwitterKitResources.bundle */; };
+		BF145ADC1D61452D00FBB327 /* TwitterCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF145AD81D61452D00FBB327 /* TwitterCore.framework */; };
+		BF145ADE1D6146D300FBB327 /* OtherLoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF145ADD1D6146D300FBB327 /* OtherLoginController.swift */; };
+		BF145AE21D6537CC00FBB327 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF145ADF1D6537CC00FBB327 /* Bolts.framework */; };
+		BF145AE31D6537CC00FBB327 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF145AE01D6537CC00FBB327 /* FBSDKCoreKit.framework */; };
+		BF145AE41D6537CC00FBB327 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF145AE11D6537CC00FBB327 /* FBSDKLoginKit.framework */; };
+		BF145AFB1D6572C800FBB327 /* CircularTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF145AF61D6572C800FBB327 /* CircularTableViewCell.swift */; };
+		BF145AFC1D6572C800FBB327 /* GroupCreationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF145AF71D6572C800FBB327 /* GroupCreationController.swift */; };
+		BF145AFD1D6572C800FBB327 /* GroupDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF145AF81D6572C800FBB327 /* GroupDetailsViewController.swift */; };
+		BF145AFE1D6572C800FBB327 /* JoinGroupsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF145AF91D6572C800FBB327 /* JoinGroupsTableViewController.swift */; };
+		BF145AFF1D6572C800FBB327 /* ViewController 2.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF145AFA1D6572C800FBB327 /* ViewController 2.swift */; };
+		BF145B021D65732500FBB327 /* AddPersonTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF145B001D65732500FBB327 /* AddPersonTableViewController.swift */; };
+		BF145B031D65732500FBB327 /* AddTopicTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF145B011D65732500FBB327 /* AddTopicTableViewController.swift */; };
+		BF145B0C1D65751500FBB327 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF145B041D65751500FBB327 /* Account.swift */; };
+		BF145B0D1D65751500FBB327 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF145B051D65751500FBB327 /* Model.swift */; };
+		BF145B0E1D65751500FBB327 /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF145B061D65751500FBB327 /* Answer.swift */; };
+		BF145B0F1D65751500FBB327 /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF145B071D65751500FBB327 /* Group.swift */; };
+		BF145B101D65751500FBB327 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF145B081D65751500FBB327 /* Profile.swift */; };
+		BF145B111D65751500FBB327 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF145B091D65751500FBB327 /* Question.swift */; };
+		BF145B121D65751500FBB327 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF145B0A1D65751500FBB327 /* Response.swift */; };
+		BF145B131D65751500FBB327 /* Topic.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF145B0B1D65751500FBB327 /* Topic.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,14 +75,32 @@
 		3F762C401D5C0E7700D73A72 /* pPollUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = pPollUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F762C441D5C0E7700D73A72 /* pPollUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pPollUITests.swift; sourceTree = "<group>"; };
 		3F762C461D5C0E7700D73A72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C27F1E841D5C383300687179 /* Account.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
-		C27F1E861D5C386A00687179 /* Profile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
-		C27F1E881D5C3DFA00687179 /* Topic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Topic.swift; sourceTree = "<group>"; };
-		C27F1E8A1D5C3EFD00687179 /* Group.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
-		C27F1E8C1D5C3F3B00687179 /* Question.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
-		C27F1E8E1D5C430700687179 /* Answer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
-		C27F1E901D5C431600687179 /* Response.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
-		C27F1E921D5C47BF00687179 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		BF145ACE1D60B4AB00FBB327 /* LoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		BF145AD01D60BDBA00FBB327 /* SignUpController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpController.swift; sourceTree = "<group>"; };
+		BF145AD21D60BDF600FBB327 /* ForgetPasswordController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgetPasswordController.swift; sourceTree = "<group>"; };
+		BF145AD51D61452D00FBB327 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
+		BF145AD61D61452D00FBB327 /* TwitterKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterKit.framework; sourceTree = "<group>"; };
+		BF145AD71D61452D00FBB327 /* TwitterKitResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = TwitterKitResources.bundle; path = TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle; sourceTree = "<group>"; };
+		BF145AD81D61452D00FBB327 /* TwitterCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterCore.framework; sourceTree = "<group>"; };
+		BF145ADD1D6146D300FBB327 /* OtherLoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OtherLoginController.swift; sourceTree = "<group>"; };
+		BF145ADF1D6537CC00FBB327 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		BF145AE01D6537CC00FBB327 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		BF145AE11D6537CC00FBB327 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		BF145AF61D6572C800FBB327 /* CircularTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularTableViewCell.swift; sourceTree = "<group>"; };
+		BF145AF71D6572C800FBB327 /* GroupCreationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupCreationController.swift; sourceTree = "<group>"; };
+		BF145AF81D6572C800FBB327 /* GroupDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupDetailsViewController.swift; sourceTree = "<group>"; };
+		BF145AF91D6572C800FBB327 /* JoinGroupsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JoinGroupsTableViewController.swift; sourceTree = "<group>"; };
+		BF145AFA1D6572C800FBB327 /* ViewController 2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewController 2.swift"; sourceTree = "<group>"; };
+		BF145B001D65732500FBB327 /* AddPersonTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPersonTableViewController.swift; sourceTree = "<group>"; };
+		BF145B011D65732500FBB327 /* AddTopicTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddTopicTableViewController.swift; sourceTree = "<group>"; };
+		BF145B041D65751500FBB327 /* Account.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
+		BF145B051D65751500FBB327 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		BF145B061D65751500FBB327 /* Answer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
+		BF145B071D65751500FBB327 /* Group.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
+		BF145B081D65751500FBB327 /* Profile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		BF145B091D65751500FBB327 /* Question.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		BF145B0A1D65751500FBB327 /* Response.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		BF145B0B1D65751500FBB327 /* Topic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Topic.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +108,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF145AE31D6537CC00FBB327 /* FBSDKCoreKit.framework in Frameworks */,
+				BF145AD91D61452D00FBB327 /* Fabric.framework in Frameworks */,
+				BF145AE41D6537CC00FBB327 /* FBSDKLoginKit.framework in Frameworks */,
+				BF145ADC1D61452D00FBB327 /* TwitterCore.framework in Frameworks */,
+				BF145ADA1D61452D00FBB327 /* TwitterKit.framework in Frameworks */,
+				BF145AE21D6537CC00FBB327 /* Bolts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,6 +137,13 @@
 		3F762C151D5C0E7600D73A72 = {
 			isa = PBXGroup;
 			children = (
+				BF145ADF1D6537CC00FBB327 /* Bolts.framework */,
+				BF145AE01D6537CC00FBB327 /* FBSDKCoreKit.framework */,
+				BF145AE11D6537CC00FBB327 /* FBSDKLoginKit.framework */,
+				BF145AD51D61452D00FBB327 /* Fabric.framework */,
+				BF145AD61D61452D00FBB327 /* TwitterKit.framework */,
+				BF145AD71D61452D00FBB327 /* TwitterKitResources.bundle */,
+				BF145AD81D61452D00FBB327 /* TwitterCore.framework */,
 				3F762C201D5C0E7700D73A72 /* pPoll */,
 				3F762C381D5C0E7700D73A72 /* pPollTests */,
 				3F762C431D5C0E7700D73A72 /* pPollUITests */,
@@ -143,17 +192,30 @@
 			path = pPollUITests;
 			sourceTree = "<group>";
 		};
+		BF145AF51D65719D00FBB327 /* GroupCreation */ = {
+			isa = PBXGroup;
+			children = (
+				BF145B001D65732500FBB327 /* AddPersonTableViewController.swift */,
+				BF145B011D65732500FBB327 /* AddTopicTableViewController.swift */,
+				BF145AF61D6572C800FBB327 /* CircularTableViewCell.swift */,
+				BF145AF71D6572C800FBB327 /* GroupCreationController.swift */,
+				BF145AF81D6572C800FBB327 /* GroupDetailsViewController.swift */,
+				BF145AF91D6572C800FBB327 /* JoinGroupsTableViewController.swift */,
+			);
+			name = GroupCreation;
+			sourceTree = "<group>";
+		};
 		C27F1E811D5C362A00687179 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				C27F1E841D5C383300687179 /* Account.swift */,
-				C27F1E881D5C3DFA00687179 /* Topic.swift */,
-				C27F1E861D5C386A00687179 /* Profile.swift */,
-				C27F1E8A1D5C3EFD00687179 /* Group.swift */,
-				C27F1E8C1D5C3F3B00687179 /* Question.swift */,
-				C27F1E8E1D5C430700687179 /* Answer.swift */,
-				C27F1E901D5C431600687179 /* Response.swift */,
-				C27F1E921D5C47BF00687179 /* Model.swift */,
+				BF145B041D65751500FBB327 /* Account.swift */,
+				BF145B051D65751500FBB327 /* Model.swift */,
+				BF145B061D65751500FBB327 /* Answer.swift */,
+				BF145B071D65751500FBB327 /* Group.swift */,
+				BF145B081D65751500FBB327 /* Profile.swift */,
+				BF145B091D65751500FBB327 /* Question.swift */,
+				BF145B0A1D65751500FBB327 /* Response.swift */,
+				BF145B0B1D65751500FBB327 /* Topic.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -171,7 +233,13 @@
 		C27F1E831D5C364200687179 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				BF145AFA1D6572C800FBB327 /* ViewController 2.swift */,
+				BF145AF51D65719D00FBB327 /* GroupCreation */,
 				3F762C231D5C0E7700D73A72 /* ViewController.swift */,
+				BF145ACE1D60B4AB00FBB327 /* LoginController.swift */,
+				BF145AD01D60BDBA00FBB327 /* SignUpController.swift */,
+				BF145AD21D60BDF600FBB327 /* ForgetPasswordController.swift */,
+				BF145ADD1D6146D300FBB327 /* OtherLoginController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -186,6 +254,7 @@
 				3F762C1A1D5C0E7700D73A72 /* Sources */,
 				3F762C1B1D5C0E7700D73A72 /* Frameworks */,
 				3F762C1C1D5C0E7700D73A72 /* Resources */,
+				BF145AD41D6144E400FBB327 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -244,7 +313,7 @@
 				TargetAttributes = {
 					3F762C1D1D5C0E7700D73A72 = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = 3S6HZ5LHJ8;
+						DevelopmentTeam = 79SN94BB2D;
 					};
 					3F762C341D5C0E7700D73A72 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -283,6 +352,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF145ADB1D61452D00FBB327 /* TwitterKitResources.bundle in Resources */,
 				3F762C2F1D5C0E7700D73A72 /* LaunchScreen.storyboard in Resources */,
 				3F762C2C1D5C0E7700D73A72 /* Assets.xcassets in Resources */,
 				3F762C271D5C0E7700D73A72 /* Main.storyboard in Resources */,
@@ -305,22 +375,49 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		BF145AD41D6144E400FBB327 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Fabric.framework/run ac6937452fa2dfab07d660f1f7358ce864efe761 a9dfce5e440bacfb8127fdc3b5f905798b39721b13ae0d9f41db5499544389d6";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3F762C1A1D5C0E7700D73A72 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C27F1E8B1D5C3EFD00687179 /* Group.swift in Sources */,
-				C27F1E8D1D5C3F3B00687179 /* Question.swift in Sources */,
+				BF145AD11D60BDBA00FBB327 /* SignUpController.swift in Sources */,
+				BF145ADE1D6146D300FBB327 /* OtherLoginController.swift in Sources */,
+				BF145ACF1D60B4AB00FBB327 /* LoginController.swift in Sources */,
+				BF145AFC1D6572C800FBB327 /* GroupCreationController.swift in Sources */,
+				BF145AFE1D6572C800FBB327 /* JoinGroupsTableViewController.swift in Sources */,
+				BF145B111D65751500FBB327 /* Question.swift in Sources */,
+				BF145B0C1D65751500FBB327 /* Account.swift in Sources */,
 				3F762C2A1D5C0E7700D73A72 /* pPoll.xcdatamodeld in Sources */,
-				C27F1E8F1D5C430700687179 /* Answer.swift in Sources */,
-				C27F1E911D5C431600687179 /* Response.swift in Sources */,
-				C27F1E891D5C3DFA00687179 /* Topic.swift in Sources */,
-				C27F1E871D5C386A00687179 /* Profile.swift in Sources */,
-				C27F1E851D5C383300687179 /* Account.swift in Sources */,
-				C27F1E931D5C47BF00687179 /* Model.swift in Sources */,
+				BF145B0E1D65751500FBB327 /* Answer.swift in Sources */,
+				BF145B0D1D65751500FBB327 /* Model.swift in Sources */,
+				BF145B0F1D65751500FBB327 /* Group.swift in Sources */,
+				BF145AFD1D6572C800FBB327 /* GroupDetailsViewController.swift in Sources */,
 				3F762C241D5C0E7700D73A72 /* ViewController.swift in Sources */,
+				BF145B131D65751500FBB327 /* Topic.swift in Sources */,
+				BF145B121D65751500FBB327 /* Response.swift in Sources */,
 				3F762C221D5C0E7700D73A72 /* AppDelegate.swift in Sources */,
+				BF145B021D65732500FBB327 /* AddPersonTableViewController.swift in Sources */,
+				BF145AFB1D6572C800FBB327 /* CircularTableViewCell.swift in Sources */,
+				BF145AFF1D6572C800FBB327 /* ViewController 2.swift in Sources */,
+				BF145B101D65751500FBB327 /* Profile.swift in Sources */,
+				BF145AD31D60BDF600FBB327 /* ForgetPasswordController.swift in Sources */,
+				BF145B031D65732500FBB327 /* AddTopicTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -462,10 +559,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = pPoll/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.pPoll;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.pPolltest1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -473,10 +577,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = pPoll/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.pPoll;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.pPolltest1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
