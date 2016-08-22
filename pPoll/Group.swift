@@ -7,21 +7,24 @@
 //
 
 import Foundation
+import UIKit
 
 class Group {
     var name : String
     var owner : Account
     var description : String
-    var members : Dictionary<String, Account>!
-    var topics : Dictionary<String, Topic>!
-    var photo : String
+    var members : [Account]
+    var topics : [Topic]!
+    var photo : UIImage
     var isPublic : Bool
     
-    init (name : String, owner : Account, description : String, photo : String, isPublic : Bool) {
+    init (name : String, owner : Account, description : String, photo : UIImage, isPublic : Bool) {
         self.name = name
         self.owner = owner
         self.description = description
         self.photo = photo
         self.isPublic = isPublic
+        self.members = [Account]()
+        self.topics = [Topic]()
     }
 }

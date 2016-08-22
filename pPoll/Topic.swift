@@ -7,15 +7,16 @@
 //
 
 import Foundation
+import UIKit
 
 class Topic {
     var name : String
     var description : String
-    var photo : String
+    var photo : UIImage
     
     init (name : String, description : String, photo : String) {
         self.name = name
         self.description = description
-        self.photo = photo
+        self.photo = UIImage(named: photo)!
     }
 }
