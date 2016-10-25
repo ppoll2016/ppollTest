@@ -6,25 +6,38 @@
 //  Copyright © 2016 syle. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
-class Answer {
-    var text : String!
-    var photo : String!
+class Answer: Equatable {
+    var id: String
+    var text: String!
+    var photo: UIImage!
+    var respondsNum: Int = 0
     
     // Text Only
-    init (text : String) {
+    init (id: String, text : String) {
+        self.id = id
         self.text = text
     }
     
     // Image Only
-    init (photo : String) {
+    init (id: String, photo : UIImage) {
+        self.id = id
         self.photo = photo
     }
     
     // Both
-    init (text : String, photo : String) {
+    init (id: String, text : String, photo : UIImage) {
+        self.id = id
         self.text = text
         self.photo = photo
     }
+    
+    func respondAddone(){
+        
+    }
+}
+
+func ==(lhs: Answer, rhs: Answer) -> Bool {
+    return lhs.id == rhs.id
 }

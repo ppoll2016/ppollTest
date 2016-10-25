@@ -8,23 +8,31 @@
 
 import Foundation
 import UIKit
+import Firebase
 
-class Group {
-    var name : String
-    var owner : Account
-    var description : String
-    var members : [Account]
-    var topics : [Topic]!
-    var photo : UIImage
-    var isPublic : Bool
+class Group: NSObject {
+    static let MAX_MEMBER_NO = 10
     
-    init (name : String, owner : Account, description : String, photo : UIImage, isPublic : Bool) {
+    var ID : String
+    var name : String
+    var owner : String
+    var members = [Account]()
+    var questions = [Question]()
+    var photo : UIImage!
+    
+    init (ID : String, name : String, owner : String) {
+        self.ID = ID
         self.name = name
         self.owner = owner
-        self.description = description
-        self.photo = photo
-        self.isPublic = isPublic
-        self.members = [Account]()
-        self.topics = [Topic]()
     }
+    
+    init (ID : String, snapShot : [String:AnyObject]) {
+        self.ID = ID
+        self.name = snapShot["name"] as! String
+        self.owner = snapShot["owner"] as! String
+    }
+}
+
+func ==(lhs : Group, rhs : Group) -> Bool {
+    return lhs.ID == rhs.ID
 }

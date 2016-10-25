@@ -7,47 +7,43 @@
 //
 
 import Foundation
+import Firebase
 
-class Question {
+class Question : Equatable {
     var ID : String
     var content : String
     var date : String
-    var owner : Account!
-    var topics : Dictionary<String, Topic>
-    var group : Group!
+    var owner : String!
     var isPublic : Bool
-    var answers : [Answer]
-    var response : Dictionary<String, Response>!
+    var answers : [Answer]!
+    var responses : [Response]!
+    var responseNo: Int!
+    var members: String!
     
-    // User question - can be public or private
-    init (ID : String, content : String, date : String, owner : Account, topics : Dictionary<String, Topic>, isPublic : Bool, answers : [Answer]) {
+    init (ID : String, content : String, date : String, owner : String) {
         self.ID = ID
         self.content = content
         self.date = date
         self.owner = owner
-        self.topics = topics
-        self.isPublic = isPublic
-        self.answers = answers
+        self.isPublic = false
+        self.responses = [Response]()
+        self.answers = [Answer]()
+        self.members = ""
     }
     
-    // Group Question - can be public or private
-    init (ID : String, content : String, date : String, topics : Dictionary<String, Topic>, group : Group, isPublic : Bool, answers : [Answer])  {
+    init (ID : String, snapShot : [String: AnyObject]) {
         self.ID = ID
-        self.content = content
-        self.date = date
-        self.group = group
-        self.topics = topics
-        self.isPublic = isPublic
-        self.answers = answers
-    }
-    
-    // Public pPoll Question - can only public
-    init (ID : String, content : String, date : String, topics : Dictionary<String, Topic>, answers : [Answer])  {
-        self.ID = ID
-        self.content = content
-        self.date = date
-        self.topics = topics
-        self.isPublic = true
-        self.answers = answers
+        self.content = snapShot["content"] as! String
+        self.date = snapShot["date"] as! String
+        self.owner = snapShot["owner"] as! String
+        self.isPublic = false
+        self.responses = [Response]()
+        self.answers = [Answer]()
+        self.members = ""
     }
 }
+
+func ==(lhs : Question, rhs : Question) -> Bool {
+    return lhs.ID == rhs.ID
+}
+

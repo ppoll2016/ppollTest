@@ -1,4 +1,59 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model name="Test1.xcdatamodel" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
-    <elements/>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="10171" systemVersion="15E65" minimumToolsVersion="Automatic">
+    <entity name="AccountCore" representedClassName=".AccountCore" syncable="YES">
+        <attribute name="emailAddress" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isPremium" attributeType="Boolean" syncable="YES"/>
+        <attribute name="phoneNumber" attributeType="String" syncable="YES"/>
+        <attribute name="uid" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="username" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="GroupCore" representedClassName=".GroupCore" syncable="YES">
+        <attribute name="id" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="name" attributeType="String" syncable="YES"/>
+        <attribute name="owner" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="GroupQuestionCore" representedClassName=".GroupQuestionCore" syncable="YES">
+        <attribute name="content" attributeType="String" syncable="YES"/>
+        <attribute name="date" attributeType="String" syncable="YES"/>
+        <attribute name="groupid" attributeType="String" syncable="YES"/>
+        <attribute name="id" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="isPublic" attributeType="Boolean" syncable="YES"/>
+        <attribute name="owner" attributeType="String" syncable="YES"/>
+        <attribute name="responseNo" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <entity name="Order" representedClassName=".Order" syncable="YES">
+        <attribute name="questionType" attributeType="String" syncable="YES"/>
+        <attribute name="uid" attributeType="String" indexed="YES" syncable="YES"/>
+    </entity>
+    <entity name="ProfileCore" representedClassName=".ProfileCore" syncable="YES">
+        <attribute name="citizenship" attributeType="String" syncable="YES"/>
+        <attribute name="dateCreated" attributeType="String" syncable="YES"/>
+        <attribute name="dateOfBirth" attributeType="String" syncable="YES"/>
+        <attribute name="gender" attributeType="String" syncable="YES"/>
+        <attribute name="nationality" attributeType="String" syncable="YES"/>
+        <attribute name="profileImage" attributeType="Transformable" storedInTruthFile="YES" syncable="YES"/>
+        <attribute name="uid" attributeType="String" indexed="YES" syncable="YES"/>
+    </entity>
+    <entity name="QuestionCore" representedClassName=".QuestionCore" syncable="YES">
+        <attribute name="content" attributeType="String" syncable="YES"/>
+        <attribute name="date" attributeType="String" syncable="YES"/>
+        <attribute name="id" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="isPublic" attributeType="Boolean" syncable="YES"/>
+        <attribute name="members" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="owner" attributeType="String" syncable="YES"/>
+        <attribute name="responseNo" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <entity name="TopicCore" representedClassName="TopicCore" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="topicImage" optional="YES" attributeType="Transformable" storedInTruthFile="YES" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="AccountCore" positionX="-63" positionY="-18" width="128" height="118"/>
+        <element name="GroupCore" positionX="-342" positionY="-18" width="128" height="88"/>
+        <element name="GroupQuestionCore" positionX="-252" positionY="399" width="128" height="148"/>
+        <element name="Order" positionX="-153" positionY="234" width="128" height="73"/>
+        <element name="ProfileCore" positionX="-207" positionY="93" width="128" height="148"/>
+        <element name="QuestionCore" positionX="-45" positionY="261" width="128" height="150"/>
+        <element name="TopicCore" positionX="-189" positionY="135" width="128" height="75"/>
+    </elements>
 </model>

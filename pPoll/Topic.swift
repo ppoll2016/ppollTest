@@ -9,14 +9,15 @@
 import Foundation
 import UIKit
 
-class Topic {
+class Topic : Equatable {
     var name : String
-    var description : String
-    var photo : UIImage
+    var photo : UIImage!
     
-    init (name : String, description : String, photo : String) {
+    init (name : String) {
         self.name = name
-        self.description = description
-        self.photo = UIImage(named: photo)!
     }
+}
+
+func ==(lhs : Topic, rhs : Topic) -> Bool {
+    return lhs.name == rhs.name
 }
