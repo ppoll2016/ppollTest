@@ -53,7 +53,7 @@ class ResultViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Assign the database references
         accountsRef = ref.child("Accounts")
         answersRef = ref.child("Answers")
@@ -136,7 +136,7 @@ class ResultViewController: UIViewController {
             self.groupImageView.clipsToBounds = true
         }
     }
-
+    
     override func viewWillDisappear(animated: Bool) {
         super.viewWillDisappear(animated)
         responsesRef.removeAllObservers()
@@ -150,7 +150,7 @@ class ResultViewController: UIViewController {
             let response = Response(owner: owner, snapshot: groupQResponseSnapshot)
             self.addResponseToView(response)
         })
-            
+        
         // Removing a response
         reference.observeEventType(.ChildRemoved, withBlock: { (snapshot) in
             print("Removing user " + snapshot.key + " response to question")
@@ -205,7 +205,6 @@ class ResultViewController: UIViewController {
             }
             
             if self.question.answers.count == 2 {
-                self.addDataPoint()
                 completion(true)
             }
         })

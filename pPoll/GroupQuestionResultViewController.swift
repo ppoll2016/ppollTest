@@ -36,7 +36,7 @@ class GroupQuestionResultViewController: ResultViewController, UITableViewDataSo
             filteredResponses.append([Response]())
             filteredContacts.append([Contact]())
         }
-
+        
         loadTableData()
         answeredActivityTable.delegate=self
         answeredActivityTable.dataSource=self
@@ -138,7 +138,7 @@ class GroupQuestionResultViewController: ResultViewController, UITableViewDataSo
                         self.checkResponse(response)
                     })
                 }
-                // No Account
+                    // No Account
                 else {
                     self.findNonAccountContact(response.owner, contact: { (contact) in
                         self.checkNonAccountResponseContact(contact)
@@ -168,7 +168,7 @@ class GroupQuestionResultViewController: ResultViewController, UITableViewDataSo
             }
         }
     }
-
+    
     func findAccountContact(account: Account, facebookID:String, contact: (Contact) -> ()) {
         // Check phone contacts
         var phoneContact: Contact?
@@ -290,7 +290,7 @@ class GroupQuestionResultViewController: ResultViewController, UITableViewDataSo
     override func updateResponses(response: Response) {
         firebaseModel.updateGroupQuestionResponse(question, response: response, currentUID: model.user.uid)
     }
-
+    
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         if indexPath.section == 2 {
             let cell = answeredActivityTable.dequeueReusableCellWithIdentifier("TBACell") as! AnswerPageCell
@@ -298,9 +298,9 @@ class GroupQuestionResultViewController: ResultViewController, UITableViewDataSo
             
             cell.circularImage.layer.cornerRadius = cell.circularImage.frame.size.width / 2
             cell.circularImage.clipsToBounds = true
-
+            
             let response = filteredResponses[indexPath.section][indexPath.row]
-
+            
             if response.answer == "-1" {
                 cell.circularLabel.text = ""
                 cell.textLabel?.text = "There are no responses for answer " + sections[indexPath.section]
